@@ -1,0 +1,70 @@
+digraph D {
+  rankdir=LR
+  size="14,14"
+  ratio="fill"
+  edge[style="solid" arrowhead=onormal penwidth=1.0 ]
+  node[shape="circle" color="gray55"  penwidth=2.0 fontcolor=grey20 fontsize=16 fixedsize=true width=1.0  height=1.0 ]
+	{rank=same;  A0 A180 }
+	{rank=same;  B180 B0 }
+	{rank=same;  C0 C180 }
+	{rank=same;  D0 D180 }
+	{rank=same;  E0 E180 E270 }
+	{rank=same;  F90 F270 }
+	{rank=same;  G90 }
+	A144 [label="A144", color="blue", penwidth=3.0, shape=circle]
+	A180 [label="A180", color="blue", penwidth=3.0, shape=circle]
+	C0 [label="C0", color="blue", penwidth=3.0, shape=circle]
+	C180 [label="C180", color="blue", penwidth=3.0, shape=circle]
+	E180 [label="E180", color="blue", penwidth=3.0, shape=circle]
+	E270 [label="E270", color="blue", penwidth=3.0, shape=circle]
+	F270 [label="F270", color="blue", penwidth=3.0, shape=circle]
+	F90 [label="F90", color="blue", penwidth=3.0, shape=circle]
+	G153 [label="G153", color="blue", penwidth=3.0, shape=circle]
+	G90 [label="G90", color="blue", penwidth=3.0, shape=circle]
+
+	A144[label="A144", color="blue", penwidth=2.0, shape=doublecircle fontcolor=black fontsize=24 ]
+	G153 [label="G153", color="blue", penwidth=2.0, shape=doubleoctagon fontcolor=black fontsize=24]
+
+A0 -> A144	[label="6283", penwidth=0.5 color="gray44"]
+A0 -> A180	[label="7853", penwidth=0.5 color="gray44"]
+A0 -> B180	[label="TRANSFER", fontcolor=gray fontsize=12 style=dashed penwidth=0.5 color="gray44"]
+A0 -> D0	[label="TRANSFER", fontcolor=gray fontsize=12 style=dashed penwidth=0.5 color="gray44"]
+A144 -> A0	[label="6283", penwidth=0.5 color="gray44"]
+A144 -> A180	[label="1570", penwidth=1.5 color="blue"]
+A180 -> A0	[label="", penwidth=0.5 color="gray44"]
+A180 -> A144	[label="1570", penwidth=0.5 color="gray44"]
+A180 -> C0	[label="TRANSFER", fontcolor=gray fontsize=12 style=dashed penwidth=1.0 color="blue"]
+B0 -> B180	[label="3141", penwidth=0.5 color="gray44"]
+B0 -> E0	[label="TRANSFER", fontcolor=gray fontsize=12 style=dashed penwidth=0.5 color="gray44"]
+B180 -> A0	[label="", fontcolor=gray fontsize=12 style=dashed penwidth=0.5 color="gray44"]
+B180 -> B0	[label="", penwidth=0.5 color="gray44"]
+B180 -> D0	[label="TRANSFER", fontcolor=gray fontsize=12 style=dashed penwidth=0.5 color="gray44"]
+C0 -> A180	[label="", fontcolor=gray fontsize=12 style=dashed penwidth=0.5 color="gray44"]
+C0 -> C180	[label="3141", penwidth=1.5 color="blue"]
+C180 -> C0	[label="", penwidth=0.5 color="gray44"]
+C180 -> D180	[label="TRANSFER", fontcolor=gray fontsize=12 style=dashed penwidth=0.5 color="gray44"]
+C180 -> E180	[label="TRANSFER", fontcolor=gray fontsize=12 style=dashed penwidth=1.0 color="blue"]
+D0 -> A0	[label="", fontcolor=gray fontsize=12 style=dashed penwidth=0.5 color="gray44"]
+D0 -> B180	[label="", fontcolor=gray fontsize=12 style=dashed penwidth=0.5 color="gray44"]
+D0 -> D180	[label="10995", penwidth=0.5 color="gray44"]
+D180 -> C180	[label="", fontcolor=gray fontsize=12 style=dashed penwidth=0.5 color="gray44"]
+D180 -> D0	[label="", penwidth=0.5 color="gray44"]
+D180 -> E180	[label="TRANSFER", fontcolor=gray fontsize=12 style=dashed penwidth=0.5 color="gray44"]
+E0 -> B0	[label="", fontcolor=gray fontsize=12 style=dashed penwidth=0.5 color="gray44"]
+E0 -> E180	[label="14137", penwidth=0.5 color="gray44"]
+E0 -> E270	[label="7068", penwidth=0.5 color="gray44"]
+E180 -> C180	[label="", fontcolor=gray fontsize=12 style=dashed penwidth=0.5 color="gray44"]
+E180 -> D180	[label="", fontcolor=gray fontsize=12 style=dashed penwidth=0.5 color="gray44"]
+E180 -> E0	[label="", penwidth=0.5 color="gray44"]
+E180 -> E270	[label="", penwidth=2.0 color="blue"]
+E270 -> E0	[label="", penwidth=0.5 color="gray44"]
+E270 -> E180	[label="", penwidth=0.5 color="gray44"]
+E270 -> F90	[label="TRANSFER", fontcolor=gray fontsize=12 style=dashed penwidth=1.0 color="blue"]
+F270 -> F90	[label="3141", penwidth=0.5 color="gray44"]
+F270 -> G90	[label="TRANSFER", fontcolor=gray fontsize=12 style=dashed penwidth=1.0 color="blue"]
+F90 -> E270	[label="", fontcolor=gray fontsize=12 style=dashed penwidth=0.5 color="gray44"]
+F90 -> F270	[label="", penwidth=2.0 color="blue"]
+G153 -> G90	[label="1099", penwidth=0.5 color="gray44"]
+G90 -> F270	[label="", fontcolor=gray fontsize=12 style=dashed penwidth=0.5 color="gray44"]
+G90 -> G153	[label="1099", penwidth=1.5 color="blue"]
+}
