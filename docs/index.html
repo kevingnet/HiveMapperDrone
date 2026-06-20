@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hive Mapper — Drone Navigation</title>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #0e1014; color: #e8eaed; line-height: 1.6; }
+    main { max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+    .muted { color: #9aa0a6; }
+    .card { background: #171a21; border: 1px solid #2a3140; border-radius: 10px; padding: 1.25rem; margin: 1rem 0; }
+    a { color: #6eb5ff; }
+    code { background: #0a0c10; padding: 0.15rem 0.35rem; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Hive Mapper — Drone Navigation</h1>
+    <p class="muted">C++ command-line utility — shortest-path navigation on interconnected circular roads (Dijkstra).</p>
+    <div class="card">
+      <p>Reads a world description file (roads, intersections, start, destination), computes minimum-time route, and can emit a Graphviz <code>.dot</code> file.</p>
+      <p><strong>Commands:</strong> GO, STOP, REVERSE, TRANSFER</p>
+      <p><strong>Run locally:</strong></p>
+      <pre>make
+./bin/drone_navigator -a dijkstra -f test_cases.txt</pre>
+    </div>
+    <p class="muted"><a href="https://github.com/kevingnet/HiveMapperDrone">GitHub</a> · <a href="https://kevingnet.github.io/kg-portfolio/samples.html">Portfolio</a></p>
+  </main>
+</body>
+</html>
